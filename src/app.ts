@@ -12,7 +12,7 @@ async function start() {
   try {
     initModels();
     await sequelize.sync({ force: true });
-    const port = process.env.PORT || 3900;
+    const port = process.env.PORT || 3000;
     app.listen(port, () => {
       console.log(`Server is running on port ${port}`);
     });
